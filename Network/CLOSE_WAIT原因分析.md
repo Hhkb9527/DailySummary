@@ -30,7 +30,7 @@
 	服务器接收到连接请求后，该连接会进入到SYN_RECV状态，并且被放入半连接队列中。
 	可通过以下命令查看半连接队列大小：cat /proc/sys/net/ipv4/tcp_max_syn_backlog
 	
-	三次握手一旦结束，进入到ESTABLISH状态，操作系统会将连接放入全连接队列中。
+	三次握手一旦结束，进入到ESTABLISHED状态，操作系统会将连接放入全连接队列中。
 	全连接队列的大小除了和系统调用listen()相关外，还和系统参数有关：cat /proc/sys/net/core/somaxconn
 
 原因：
@@ -66,10 +66,11 @@
 1. 快速回收TIME_WAIT连接占用的资源
 2. 重用TIME_WAIT连接占用的资源
 
-e.g. 
-  #开启重用，允许将处于TIME_WAIT的socket重新用于新的TCP连接，默认为0，表示关闭 
+
+e.g. man tcp
+  #开启重用，允许将处于TIME_WAIT的socket重新用于新的TCP连接，默认为0，表示关闭
   net.ipv4.tcp_tw_reuse = 1
-  # 开启TCP连接中TIME_WAIT socket的快速回收，默认为0，表示关闭 
+  # 开启TCP连接中TIME_WAIT socket的快速回收，默认为0，表示关闭
   net.ipv4.tcp_tw_recycle = 1
   # 如果套接字由本端要求关闭，这个参数决定了它保持在FIN_WAIT2状态的时间
   net.ipv4.tcp_fin_timeout = 30
