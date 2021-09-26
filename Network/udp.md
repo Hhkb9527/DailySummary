@@ -1,4 +1,4 @@
-<img src="udp.assets/image-20210926214136257.png" alt="image-20210926214136257" style="zoom:25%;" />
+<img src="UDP.assets/image-20210926214136257.png" alt="image-20210926214136257" style="zoom:25%;" />
 
 ### 用户数据报协议
 
@@ -18,7 +18,7 @@ CRC校验（循环冗余校验码）
 但是UDP在丢包的情况下继续发送，会加剧网络的阻塞，有时也需要拥塞控制一下
 ```
 
-<img src="udp.assets/image-20210926215825956.png" alt="image-20210926215825956" style="zoom: 50%;" />
+<img src="UDP.assets/image-20210926215825956.png" alt="image-20210926215825956" style="zoom: 50%;" />
 
 ### UDP 缓冲区
 
