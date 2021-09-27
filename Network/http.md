@@ -103,14 +103,6 @@ Cookie是明文传输，容易被恶意篡改发送到服务器。
 
 
 
-## HTTPS
-
-****
-
-http://www.ruanyifeng.com/blog/2014/09/illustration-ssl.html
-
-https://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html
-
 ## HTTP2.0
 
 ****
@@ -127,11 +119,3 @@ HTTP/2 的主要目标是通过支持完整的请求与响应复用来减少延�
 头部压缩
 HPACK 压缩算法
 ```
-
-
-
-## HTTP3.0
-
-****
-
-https://zhuanlan.zhihu.com/p/330300133

@@ -1,4 +1,4 @@
-<img src="CLOSE_WAIT.assets/四次挥手.png" alt="四次挥手" style="zoom: 40%;" />
+<img src="assets/CLOSE_WAIT.assets/四次挥手.png" alt="四次挥手" style="zoom: 40%;" />
 
 ### 大量CLOSE_WAIT探究
 

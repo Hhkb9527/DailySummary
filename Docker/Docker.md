@@ -36,7 +36,7 @@ Docker 是基于Go语言开发的开源项目。
 
 > 之前的虚拟机技术
 
-<img src="Docker.assets/image-20200915163404847.png" alt="image-20200915163404847" style="zoom:80%;" />
+<img src="assets/Docker.assets/image-20200915163404847.png" alt="image-20200915163404847" style="zoom:80%;" />
 
 **虚拟机技术的缺点：**
 
@@ -48,7 +48,7 @@ Docker 是基于Go语言开发的开源项目。
 
 **容器化技术不是模拟一整个完整的操作系统**
 
-<img src="Docker.assets/image-20200915163905097.png" alt="image-20200915163905097" style="zoom:80%;" />
+<img src="assets/Docker.assets/image-20200915163905097.png" alt="image-20200915163905097" style="zoom:80%;" />
 
 **比较Docker和虚拟机技术的不同**
 
@@ -69,7 +69,7 @@ Docker 是基于Go语言开发的开源项目。
 
 ## Docker 基本组成
 
-<img src="Docker.assets/image-20200916173329925.png" alt="image-20200916173329925" style="zoom:80%;" />
+<img src="assets/Docker.assets/image-20200916173329925.png" alt="image-20200916173329925" style="zoom:80%;" />
 
 **镜像（image）**
 
@@ -106,7 +106,7 @@ Docker 是一个Client-Server架构的系统，Docker的守护进程运行在主
 
 Docker-Server接收到Docker-Client的指令，就会执行这个命令！
 
-<img src="Docker.assets/image-20200915175947632.png" alt="image-20200915175947632" style="zoom:80%;" />
+<img src="assets/Docker.assets/image-20200915175947632.png" alt="image-20200915175947632" style="zoom:80%;" />
 
 **Docker 为什么比 VM 快？**
 
@@ -270,7 +270,7 @@ docker cp 容器id:容器内路径 目标主机路径  # 只要容器存在即�
 
 ## 小结
 
-<img src="Docker.assets/image-20200915204510413.png" alt="image-20200915204510413" style="zoom: 80%;" />
+<img src="assets/Docker.assets/image-20200915204510413.png" alt="image-20200915204510413" style="zoom: 80%;" />
 
 ## 例：安装 Nginx
 
@@ -294,7 +294,7 @@ whereis nginx
 
 **端口暴露的概念**
 
-<img src="Docker.assets/image-20200916152137252.png" alt="image-20200916152137252" style="zoom:80%;" />
+<img src="assets/Docker.assets/image-20200916152137252.png" alt="image-20200916152137252" style="zoom:80%;" />
 
 # Docker 镜像
 
@@ -680,7 +680,7 @@ root@16:41:~ # docker inspect 9399446701df
 
 多个 MySQL 同步数据！
 
-<img src="Docker.assets/image-20200917170632051.png" alt="image-20200917170632051" style="zoom:80%;" />
+<img src="assets/Docker.assets/image-20200917170632051.png" alt="image-20200917170632051" style="zoom:80%;" />
 
 ```shell
 # 使用刚刚生成的镜像来创建容器，--volumes-from 同步数据，docker01 就是数据卷容器
@@ -721,7 +721,7 @@ DockerFile 使用来构建 Docker 镜像的文件！命令参数脚本！
 3. \# 表示注释
 4. 每一个指定都会创建一个新的镜像层，并提交！
 
-<img src="Docker.assets/image-20200918172713076.png" alt="image-20200918172713076" style="zoom:80%;" />
+<img src="assets/Docker.assets/image-20200918172713076.png" alt="image-20200918172713076" style="zoom:80%;" />
 
 **步骤：开发，部署，运维**
 
@@ -827,7 +827,7 @@ Options:
 
 ## 小结
 
-<img src="Docker.assets/image-20200923135015249.png" alt="image-20200923135015249" style="zoom:80%;" />
+<img src="assets/Docker.assets/image-20200923135015249.png" alt="image-20200923135015249" style="zoom:80%;" />
 
 
 
@@ -891,7 +891,7 @@ root@15:41:~ # ping 172.17.0.3
 root@15:41:~ # docker exec -it centos01 ping 172.17.0.3
 ```
 
-<img src="Docker.assets/image-20201009160102482.png" alt="image-20201009160102482" style="zoom:80%;" />
+<img src="assets/Docker.assets/image-20201009160102482.png" alt="image-20201009160102482" style="zoom:80%;" />
 
 ## --link
 
@@ -968,7 +968,7 @@ root@16:55:~ # docker exec -it centos01 ping 192.168.0.2
 root@16:56:~ # docker network inspect mynet
 ```
 
-<img src="Docker.assets/image-20201009165007709.png" alt="image-20201009165007709" style="zoom:80%;" />
+<img src="assets/Docker.assets/image-20201009165007709.png" alt="image-20201009165007709" style="zoom:80%;" />
 
 
 
